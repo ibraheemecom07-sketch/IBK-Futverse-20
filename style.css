@@ -1,0 +1,96 @@
+<!-- ===================== style.css ===================== -->
+body{margin:0;font-family:Segoe UI;background:#0b1220;color:#f1f5f9}
+header{display:flex;justify-content:space-between;align-items:center;padding:20px 40px;background:#000000}header h1 {
+  color: #ffffff;
+}
+nav a{color:#ffffff;margin-left:20px;text-decoration:none;position:relative}
+nav a::after{content:"";position:absolute;width:0;height:2px;left:0;bottom:-5px;background:#22d3ee;transition:.3s}
+nav a:hover::after{width:100%}
+.hero{height:90vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;background:linear-gradient(135deg,#031727,#0f172a)}
+.hero h2{font-size:3.5rem;color:#3dc3ef;animation:fadeDown 1.2s}
+.hero p{animation:fadeUp 1.2s}
+.btn{padding:12px 30px;background:#22d3ee;border:none;border-radius:30px;font-weight:bold;cursor:pointer;transition:.3s}
+.btn:hover{transform:translateY(-5px);box-shadow:0 15px 30px rgba(34,211,238,.4)}
+section{padding:80px 40px}
+.boots{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:30px}
+<div class="boots">
+.boots{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:30px}
+.boot-card{background:#527a82;padding:20px;border-radius:20px;text-align:center;transition:.4s}
+.boot-card img{width:100%;border-radius:15px;transition:.4s}
+.boot-card:hover{transform:translateY(-10px)}
+.boot-card:hover img{transform:scale(1.1)}
+table{width:80%;margin:auto;border-collapse:collapse}
+th,td{border:1px solid #1e293b;padding:12px;text-align:center}
+th{color:#22d3ee;background:#020617}
+form{max-width:400px;margin:auto;background:#000000;padding:30px;border-radius:20px}
+input{width:100%;padding:12px;margin:10px 0}
+footer{text-align:center;background:#020617;padding:20px}
+@keyframes fadeDown{from{opacity:0;transform:translateY(-40px)}to{opacity:1}}
+@keyframes fadeUp{from{opacity:0;transform:translateY(40px)}to{opacity:1}}
+.price {
+  margin-top: 10px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #22d3ee;
+}
+.boots-page {
+  background: linear-gradient(135deg, #020617, #0b1220, #020617);
+}
+.size-page {
+  background: linear-gradient(135deg, #7989d2, #4b9fd4, #000000);
+}
+.home-page {
+  background: linear-gradient(135deg, #7989d2, #4b9fd4, #000000);
+}
+.about-page {
+  background: linear-gradient(135deg, #7989d2, #4b9fd4, #000000);
+}
+.register-page {
+  background: linear-gradient(135deg, #020617, #0f172a);
+}
+
+.register-section {
+  max-width: 500px;
+  margin: 100px auto;
+  text-align: center;
+}
+
+.register-section h2 {
+  font-size: 2.2rem;
+  color: #22d3ee;
+  margin-bottom: 10px;
+}
+
+.form-subtext {
+  font-size: 0.95rem;
+  color: #cbd5f5;
+  margin-bottom: 30px;
+}
+
+form {
+  background: #020617;
+  padding: 35px;
+  border-radius: 20px;
+}
+
+label {
+  display: block;
+  text-align: left;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-size: 0.9rem;
+  color: #94a3b8;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  background: #0f172a;
+  color: #f1f5f9;
+}
+
+input:focus {
+  outline: 2px solid #22d3ee;
+}
